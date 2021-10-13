@@ -1,0 +1,18 @@
+<!-- Put this file in /var/www/html/led.html and put led.py file in /usr/lib/cgi-bin/led.py -->
+
+<html>
+<head>
+<title>LED switch</title>
+</head>
+<body>
+<div style="width:600px;background:#AAAAFF;border:1px;text-align:center">
+<br>
+
+<form action="/cgi-bin/led.py" method="POST" target="_self">
+    <input type="submit" name="on" value="Turn LED ON" />
+    <input type="submit" name="off" value="Turn LED OFF" /> 
+</form>
+
+<br>
+</body>
+</html>
